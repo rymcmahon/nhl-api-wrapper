@@ -44,7 +44,7 @@ class NhlApi
   end
 
   def career_stats_regular_season(player_id)
-  	end_point = "/people/#{player_id}/stats?stats=careerRegularSeason"
+    end_point = "/people/#{player_id}/stats?stats=careerRegularSeason"
     uri = URI("#{NhlApi::BASE_URL}#{end_point}")
     response = Net::HTTP.get_response(uri)
 
@@ -57,7 +57,7 @@ class NhlApi
   end
 
   def career_stats_playoffs(player_id)
-  	end_point = "/people/#{player_id}/stats?stats=careerPlayoffs"
+    end_point = "/people/#{player_id}/stats?stats=careerPlayoffs"
     uri = URI("#{NhlApi::BASE_URL}#{end_point}")
     response = Net::HTTP.get_response(uri)
 
