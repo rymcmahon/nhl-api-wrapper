@@ -5,7 +5,7 @@ class NhlApi
   BASE_URL = 'https://statsapi.web.nhl.com/api/v1'
 
   def player(id)
-  	end_point = "/people/#{id}"
+    end_point = "/people/#{id}"
     uri = URI("#{NhlApi::BASE_URL}#{end_point}")
     response = Net::HTTP.get_response(uri)
 
